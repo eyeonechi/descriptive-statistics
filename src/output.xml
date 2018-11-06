@@ -1,0 +1,270 @@
+<!DOCTYPE attributes [
+  <!ELEMENT attributes (attribute*)>
+  <!ELEMENT attribute (name, properties?, modes?, uniques?)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT properties (property+)>
+  <!ELEMENT property (#PCDATA)>
+  <!ELEMENT modes (mode+)>
+  <!ELEMENT mode (#PCDATA)>
+  <!ELEMENT uniques (unique+)>
+  <!ELEMENT unique (#PCDATA)>
+  <!ATTLIST attribute type (integer|float|string) #REQUIRED>
+  <!ATTLIST property name (min|q1|median|q3|max) #REQUIRED>
+  ]><attributes>
+  <attribute type="integer">
+    <name>age</name>
+    <properties>
+      <property name="min">17</property>
+      <property name="q1">28.0</property>
+      <property name="median">37.0</property>
+      <property name="q3">48.0</property>
+      <property name="max">90</property>
+    </properties>
+    <modes>
+      <mode>36</mode>
+    </modes>
+  </attribute>
+  <attribute type="string">
+    <name>workclass</name>
+    <modes>
+      <mode> Private</mode>
+    </modes>
+    <uniques>
+      <unique> ?</unique>
+      <unique> Federal-gov</unique>
+      <unique> Local-gov</unique>
+      <unique> Never-worked</unique>
+      <unique> Private</unique>
+      <unique> Self-emp-inc</unique>
+      <unique> Self-emp-not-inc</unique>
+      <unique> State-gov</unique>
+      <unique> Without-pay</unique>
+    </uniques>
+  </attribute>
+  <attribute type="integer">
+    <name>fnlwgt</name>
+    <properties>
+      <property name="min">12285</property>
+      <property name="q1">117821.5</property>
+      <property name="median">178356.0</property>
+      <property name="q3">237058.0</property>
+      <property name="max">1484705</property>
+    </properties>
+    <modes>
+      <mode>164190</mode>
+      <mode>123011</mode>
+      <mode>203488</mode>
+    </modes>
+  </attribute>
+  <attribute type="string">
+    <name>education</name>
+    <modes>
+      <mode> HS-grad</mode>
+    </modes>
+    <uniques>
+      <unique> 10th</unique>
+      <unique> 11th</unique>
+      <unique> 12th</unique>
+      <unique> 1st-4th</unique>
+      <unique> 5th-6th</unique>
+      <unique> 7th-8th</unique>
+      <unique> 9th</unique>
+      <unique> Assoc-acdm</unique>
+      <unique> Assoc-voc</unique>
+      <unique> Bachelors</unique>
+      <unique> Doctorate</unique>
+      <unique> HS-grad</unique>
+      <unique> Masters</unique>
+      <unique> Preschool</unique>
+      <unique> Prof-school</unique>
+      <unique> Some-college</unique>
+    </uniques>
+  </attribute>
+  <attribute type="integer">
+    <name>education-num</name>
+    <properties>
+      <property name="min">1</property>
+      <property name="q1">9.0</property>
+      <property name="median">10.0</property>
+      <property name="q3">12.0</property>
+      <property name="max">16</property>
+    </properties>
+    <modes>
+      <mode>9</mode>
+    </modes>
+  </attribute>
+  <attribute type="string">
+    <name>marital-status</name>
+    <modes>
+      <mode> Married-civ-spouse</mode>
+    </modes>
+    <uniques>
+      <unique> Divorced</unique>
+      <unique> Married-AF-spouse</unique>
+      <unique> Married-civ-spouse</unique>
+      <unique> Married-spouse-absent</unique>
+      <unique> Never-married</unique>
+      <unique> Separated</unique>
+      <unique> Widowed</unique>
+    </uniques>
+  </attribute>
+  <attribute type="string">
+    <name>occupation</name>
+    <modes>
+      <mode> Prof-specialty</mode>
+    </modes>
+    <uniques>
+      <unique> ?</unique>
+      <unique> Adm-clerical</unique>
+      <unique> Armed-Forces</unique>
+      <unique> Craft-repair</unique>
+      <unique> Exec-managerial</unique>
+      <unique> Farming-fishing</unique>
+      <unique> Handlers-cleaners</unique>
+      <unique> Machine-op-inspct</unique>
+      <unique> Other-service</unique>
+      <unique> Priv-house-serv</unique>
+      <unique> Prof-specialty</unique>
+      <unique> Protective-serv</unique>
+      <unique> Sales</unique>
+      <unique> Tech-support</unique>
+      <unique> Transport-moving</unique>
+    </uniques>
+  </attribute>
+  <attribute type="string">
+    <name>relationship</name>
+    <modes>
+      <mode> Husband</mode>
+    </modes>
+    <uniques>
+      <unique> Husband</unique>
+      <unique> Not-in-family</unique>
+      <unique> Other-relative</unique>
+      <unique> Own-child</unique>
+      <unique> Unmarried</unique>
+      <unique> Wife</unique>
+    </uniques>
+  </attribute>
+  <attribute type="string">
+    <name>race</name>
+    <modes>
+      <mode> White</mode>
+    </modes>
+    <uniques>
+      <unique> Amer-Indian-Eskimo</unique>
+      <unique> Asian-Pac-Islander</unique>
+      <unique> Black</unique>
+      <unique> Other</unique>
+      <unique> White</unique>
+    </uniques>
+  </attribute>
+  <attribute type="string">
+    <name>sex</name>
+    <modes>
+      <mode> Male</mode>
+    </modes>
+    <uniques>
+      <unique> Female</unique>
+      <unique> Male</unique>
+    </uniques>
+  </attribute>
+  <attribute type="integer">
+    <name>capital-gain</name>
+    <properties>
+      <property name="min">0</property>
+      <property name="q1">0.0</property>
+      <property name="median">0.0</property>
+      <property name="q3">0.0</property>
+      <property name="max">99999</property>
+    </properties>
+    <modes>
+      <mode>0</mode>
+    </modes>
+  </attribute>
+  <attribute type="integer">
+    <name>capital-loss</name>
+    <properties>
+      <property name="min">0</property>
+      <property name="q1">0.0</property>
+      <property name="median">0.0</property>
+      <property name="q3">1740.0</property>
+      <property name="max">4356</property>
+    </properties>
+    <modes>
+      <mode>0</mode>
+    </modes>
+  </attribute>
+  <attribute type="integer">
+    <name>hours-per-week</name>
+    <properties>
+      <property name="min">1</property>
+      <property name="q1">40.0</property>
+      <property name="median">40.0</property>
+      <property name="q3">45.0</property>
+      <property name="max">99</property>
+    </properties>
+    <modes>
+      <mode>40</mode>
+    </modes>
+  </attribute>
+  <attribute type="string">
+    <name>native-country</name>
+    <modes>
+      <mode> United-States</mode>
+    </modes>
+    <uniques>
+      <unique> ?</unique>
+      <unique> Cambodia</unique>
+      <unique> Canada</unique>
+      <unique> China</unique>
+      <unique> Columbia</unique>
+      <unique> Cuba</unique>
+      <unique> Dominican-Republic</unique>
+      <unique> Ecuador</unique>
+      <unique> El-Salvador</unique>
+      <unique> England</unique>
+      <unique> France</unique>
+      <unique> Germany</unique>
+      <unique> Greece</unique>
+      <unique> Guatemala</unique>
+      <unique> Haiti</unique>
+      <unique> Holand-Netherlands</unique>
+      <unique> Honduras</unique>
+      <unique> Hong</unique>
+      <unique> Hungary</unique>
+      <unique> India</unique>
+      <unique> Iran</unique>
+      <unique> Ireland</unique>
+      <unique> Italy</unique>
+      <unique> Jamaica</unique>
+      <unique> Japan</unique>
+      <unique> Laos</unique>
+      <unique> Mexico</unique>
+      <unique> Nicaragua</unique>
+      <unique> Outlying-US(Guam-USVI-etc)</unique>
+      <unique> Peru</unique>
+      <unique> Philippines</unique>
+      <unique> Poland</unique>
+      <unique> Portugal</unique>
+      <unique> Puerto-Rico</unique>
+      <unique> Scotland</unique>
+      <unique> South</unique>
+      <unique> Taiwan</unique>
+      <unique> Thailand</unique>
+      <unique> Trinadad&amp;Tobago</unique>
+      <unique> United-States</unique>
+      <unique> Vietnam</unique>
+      <unique> Yugoslavia</unique>
+    </uniques>
+  </attribute>
+  <attribute type="string">
+    <name>50k</name>
+    <modes>
+      <mode> &lt;=50K</mode>
+    </modes>
+    <uniques>
+      <unique> &lt;=50K</unique>
+      <unique> &gt;50K</unique>
+    </uniques>
+  </attribute>
+</attributes>
